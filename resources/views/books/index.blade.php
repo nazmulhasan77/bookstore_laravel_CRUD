@@ -27,6 +27,9 @@
                 <td>{{$book->isbn}}</td>
                 <td>{{$book->stock}}</td>
                 <td>{{$book->price}}</td>
+                <td>
+                    <a href="{{url('books/'.'show/'.$book->id)}}"> View </a>
+                </td>
             </tr>
 
         @endforeach
