@@ -1,17 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Books</title>
-</head>
-<body>
+@extends('layout',['title'=>'Show'])
+
+    @section('page-content')
     <p>
         <a href="{{route('books.index')}}">Back</a>
     </p>
     <h2>Book Details</h2>
-    <table width="25%" border="2">
+    <table class ='table table-striped'>
         <tr>
             <th>ID </th>
             <td>{{$book->id}}</td>
@@ -47,6 +41,4 @@
 
 
     </table>
-
-</body>
-</html>
+    @endsection
