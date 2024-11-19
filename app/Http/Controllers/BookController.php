@@ -3,10 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Book;
 
 class BookController extends Controller
 {
     public function index(){
-        return "list of books";
+       $books = Book::all();
+       return view("books.index")->with('books',$books);
     }
 }
