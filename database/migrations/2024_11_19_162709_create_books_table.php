@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('title'); // Book title
             $table->string('author',length:255);
             $table->string('isbn',length:13); // Author name
-            $table->decimal('price', 8, 2)->nullable(); // Book price
+            $table->decimal('price', 8, 2); // Book price
             $table->integer('stock')->default(0); // Stock quantity
             $table->timestamps();
         });
