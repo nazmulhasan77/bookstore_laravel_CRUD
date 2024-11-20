@@ -25,39 +25,101 @@ A comprehensive **Bookstore Management System** built with Laravel, designed to 
 ---
 
 ## 🚀 **How to Set Up**
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/nazmulhasan77/bookstore_laravel_CRUD.git
-   ```
-2. **Navigate to the Project Directory**:
-   ```bash
-   cd bookstore_laravel
-   ```
-3. **Install Dependencies**:
-   ```bash
-   composer install
-   npm install && npm run dev
-   ```
-4. **Set Up the Environment**:
-   - Copy the `.env.example` file to `.env`:
-     ```bash
-     cp .env.example .env
-     ```
-   - Update database credentials in `.env`.
 
-5. **Run Migrations and Seeders**:
-   ```bash
-   php artisan migrate --seed
-   ```
+# How to Run the Bookstore Laravel Project
 
-6. **Start the Server**:
-   ```bash
-   php artisan serve
-   ```
+Follow these steps to set up and run the Bookstore locally:
 
-7. Visit `http://127.0.0.1:8000/books` in your browser.
+## 1. Clone the Repository
+
+```bash
+git clone https://github.com/nazmulhasan77/bookstore_laravel_CRUD.git
+```
+
+## 2. Install Dependencies
+
+Ensure you have Composer installed, then run:
+
+```bash
+composer install
+```
+
+## 3. Configure Environment
+
+Copy the `.env.example` file to create a `.env` file:
+
+```bash
+cp .env.example .env
+```
+
+Open the `.env` file and set up your database configuration:
+
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=your_database_name
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+```
+
+## 4. Generate Application Key
+
+Run the following command to generate a unique application key:
+
+```bash
+php artisan key:generate
+```
+
+## 5. Set Up the Database
+
+Ensure the specified database exists. Then, run the migrations to set up the tables:
+
+```bash
+php artisan migrate
+```
+
+## 6. Seed the Database (Optional)
+
+If the project includes data seeds, run:
+
+```bash
+php artisan db:seed
+```
+
+## 7. Start the Development Server
+
+To run the project locally, start the Laravel development server:
+
+```bash
+php artisan serve
+```
+
+## 8. Access the Application
+
+Open your browser and navigate to:
+
+```plaintext
+http://127.0.0.1:8000
+```
 
 ---
+
+### Alternative: Run PHP Built-in Server
+
+You can use the PHP built-in server instead of `php artisan serve`. Run the following command:
+
+```bash
+php -S localhost:8000 -t public
+```
+
+- `localhost:8000` specifies the host and port.
+- `-t public` sets the `public` directory as the document root (required for Laravel).
+
+---
+
+After following these steps, the Bookstore System should be running locally.
+
 
 ## 📂 **Project Structure**
 ```
