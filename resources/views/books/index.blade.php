@@ -18,8 +18,6 @@
     </div>
 
 
-
-
     <table class ='table table-striped'>
         <tr>
         <th>ID </th>
@@ -43,6 +41,15 @@
                 <td>
                     <a href="{{url('books/'.'show/'.$book->id)}}"> View </a>
                     <a href="{{url('books/'.'edit/'.$book->id)}}"> Edit </a>
+
+                    <form method="post" action="{{route('books.destroy' )}}" onsubmit="return confirm ('Are you sure to delete this book ?') ">
+                        @csrf
+                        @method('DELETE')
+                        <input type="hidden" name="id" value="{{$book->id}}">
+                        @method('DELETE')
+                        <input type="submit" value="Delete" class="btn btn-link"></input>
+                    </form>
+
                 </td>
             </tr>
 
