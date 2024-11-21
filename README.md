@@ -24,6 +24,14 @@ A comprehensive **Bookstore Management System** built with Laravel, designed to 
 
 ---
 
+
+# Laravel Project Documentation 
+
+For detailed documentation and setup instructions, visit the following link:
+
+[Laravel Documentation and Guide](https://nazmulhasan77.notion.site/Laravel-1336c1c6cca6802ea41bc8facc960d3d?pvs=4)
+
+
 ## 🚀 **How to Set Up**
 
 # How to Run the Bookstore Laravel Project
