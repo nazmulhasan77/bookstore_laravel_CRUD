@@ -7,4 +7,8 @@ use App\Http\Controllers\BookController;
 Route::get('/', [BookController::class, 'index']) -> name('books.index') ;
 
 //for showing book information
-Route::get('books/show/{id}', [BookController::class, 'show'])->name('show.index') ;
+Route::get('books/show/{id}', [BookController::class, 'show'])->name('books.show') ;
+//for creating a new book
+Route::get('books/create', [BookController::class, 'create'])->name('books.create') ;
+//for storing a new book data into the database
+Route::post('/books', [BookController::class, 'store'])->name('books.store') ;

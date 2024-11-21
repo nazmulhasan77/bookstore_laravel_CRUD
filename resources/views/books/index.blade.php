@@ -1,8 +1,25 @@
 @extends('layout', ['title' => 'Home'])
 
     @section('page-content')
-
     <h2>Book List</h2>
+
+    <div class="row mt-2">
+
+        <div class="col-lg-10">
+            Scarch Functionality
+        </div>
+
+        <div class="col-lg-2">
+            <p class="text-end">
+                <a href="{{route('books.create')}}" class="btn btn-primary">Add Book</a>
+            </p>
+        </div>
+
+    </div>
+
+
+
+
     <table class ='table table-striped'>
         <tr>
         <th>ID </th>
