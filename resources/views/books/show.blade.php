@@ -39,6 +39,32 @@
             <td>{{$book->price}}</td>
         </tr>
 
+        <tr>
+            <th>Created At</th>
+            <td>{{$book->created_at}}</td>
+        </tr>
+
+
+        <tr>
+            <th>Updated At</th>
+            <td>{{$book->updated_at}}</td>
+        </tr>
+
+        <tr>
+            <th>Updated At</th>
+            <td>{{$book->updated_at}}</td>
+        </tr>
+
+        <tr>
+            <td>
+                <a class="btn btn-danger" href="{{url('books/'.'edit/'.$book->id)}}"> Edit </a>
+            </td>
+
+        </tr>
+
+
+
+
 
     </table>
     @endsection

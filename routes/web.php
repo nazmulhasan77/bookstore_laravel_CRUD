@@ -12,3 +12,8 @@ Route::get('books/show/{id}', [BookController::class, 'show'])->name('books.show
 Route::get('books/create', [BookController::class, 'create'])->name('books.create') ;
 //for storing a new book data into the database
 Route::post('/books', [BookController::class, 'store'])->name('books.store') ;
+
+
+//for editing a book
+Route::get('books/edit/{id}', [BookController::class, 'edit'])->name('books.edit') ;
+Route::post('books/update', [BookController::class,'update'])->name('books.update') ;

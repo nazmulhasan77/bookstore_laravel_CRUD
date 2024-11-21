@@ -42,6 +42,7 @@
                 <td>{{$book->price}}</td>
                 <td>
                     <a href="{{url('books/'.'show/'.$book->id)}}"> View </a>
+                    <a href="{{url('books/'.'edit/'.$book->id)}}"> Edit </a>
                 </td>
             </tr>
 
