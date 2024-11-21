@@ -9,8 +9,19 @@ use Mockery\Generator\Parameter;
 class BookController extends Controller
 {
     //index controller
-    public function index(){
-       $books = Book::paginate(10);
+    public function index(Request $request ){
+
+        if($request->has("scarch")){
+            $books=Book::query()
+                ->where('title','like','%'.$request->get('scarch').'%')
+                ->orWhere('author','like','%'.$request->get('scarch').'%')
+                ->paginate(10);
+        }
+        else{
+
+            $books = Book::paginate(10);
+        }
+
        return view("books.index")
         ->with('books',$books);
     }

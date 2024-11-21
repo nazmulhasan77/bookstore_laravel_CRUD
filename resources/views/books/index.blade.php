@@ -3,10 +3,23 @@
     @section('page-content')
     <h2>Book List</h2>
 
+
     <div class="row mt-2">
 
         <div class="col-lg-10">
-            Scarch Functionality
+            <form method="get" action="{{route('books.index')}}">
+
+                <div class="row g-3">
+                    <div class="col">
+                      <input type="text"  name="scarch" class="form-control" placeholder="Scarch" >
+                    </div>
+                    <div class="col">
+                        <button type="submit" class="btn btn-success">Scarch</button>
+                    </div>
+                  </div>
+
+
+            </form>
         </div>
 
         <div class="col-lg-2">
@@ -46,7 +59,6 @@
                         @csrf
                         @method('DELETE')
                         <input type="hidden" name="id" value="{{$book->id}}">
-                        @method('DELETE')
                         <input type="submit" value="Delete" class="btn btn-link"></input>
                     </form>
 
