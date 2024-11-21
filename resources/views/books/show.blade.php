@@ -57,7 +57,7 @@
 
         <tr>
             <td>
-                <a class="btn btn-danger" href="{{url('books/'.'edit/'.$book->id)}}"> Edit </a>
+                <a class="btn btn-danger" href="{{url('books/'.'edit/'.$book->id)}}"> <i class="bi bi-pencil-square"></i> Edit </a>
             </td>
 
         </tr>

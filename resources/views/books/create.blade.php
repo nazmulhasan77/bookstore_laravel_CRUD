@@ -54,8 +54,8 @@
           </div>
 
           <div class="mb-3">
-            <button type="submit" class="btn btn-primary">Submit</button>
-            <a href="{{route('books.index')}}" class="btn btn-danger">Back</a>
+            <button type="submit" class="btn btn-primary"> <i class="bi bi-check2-circle"></i> Submit</button>
+            <a href="{{route('books.index')}}" class="btn btn-danger"> <i class="bi bi-arrow-90deg-left"></i> Back</a>
           </div>
 
 

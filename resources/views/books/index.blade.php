@@ -14,7 +14,7 @@
                       <input type="text"  name="scarch" class="form-control" placeholder="Scarch" >
                     </div>
                     <div class="col">
-                        <button type="submit" class="btn btn-success">Scarch</button>
+                        <button type="submit" class="btn btn-success"> <i class="bi bi-search"></i> Scarch</button>
                     </div>
                   </div>
 
@@ -24,7 +24,7 @@
 
         <div class="col-lg-2">
             <p class="text-end">
-                <a href="{{route('books.create')}}" class="btn btn-primary">Add Book</a>
+                <a href="{{route('books.create')}}" class="btn btn-primary"> <i class="bi bi-file-earmark-plus-fill"></i> Add Book</a>
             </p>
         </div>
 
