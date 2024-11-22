@@ -10,7 +10,7 @@
             <th>ID </th>
             <td>{{$book->id}}</td>
         </tr>
-
+e
         <tr>
             <th>Title </th>
             <td>{{$book->title}}</td>
@@ -62,9 +62,5 @@
 
         </tr>
 
-
-
-
-
-    </table>
-    @endsection
+</table>
+@endsection

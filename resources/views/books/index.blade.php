@@ -1,9 +1,6 @@
 @extends('layout', ['title' => 'Home'])
 
     @section('page-content')
-    <h2>Book List</h2>
-
-
     <div class="row mt-2">
 
         <div class="col-lg-10">
