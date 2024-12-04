@@ -1,14 +1,13 @@
 Run  a laravel project
 To run  Laravel project, follow these steps:
+https://nazmulhasan77.notion.site/Education-27441ec826174965aeb47dfb3de34fa5?pvs=4
 
 1. **Clone the Repository**:
 
-    ```bash
 
     git clone https://github.com/
 
     ```
-
 2. **Install Dependencies**:
 Ensure you have Composer installed, then run:
 
